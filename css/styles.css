@@ -1,0 +1,173 @@
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Base
+* * * * * * * * * * * * * * * * * * * * * * * * * * * */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: #2f3238;
+}
+
+.wrapper {
+    width: 80%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Nav
+* * * * * * * * * * * * * * * * * * * * * * * * * * * */
+nav {
+    padding: 10px 0;
+    height: 80px;
+    width: 100%;
+    background: #222;
+    color: white;
+}
+
+
+
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Hero
+* * * * * * * * * * * * * * * * * * * * * * * * * * * */
+.hero {
+    padding: 10px 0;
+    height: 300px;
+    width: 100%;
+    background: #ccc;
+}
+
+
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Main
+* * * * * * * * * * * * * * * * * * * * * * * * * * * */
+main {
+    padding: 10px 0;
+    height: 600px;
+    width: 100%;
+}
+
+
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Card
+* * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+.card {
+    width: 480px;
+    height: 360px;
+    background: url('https://tympanus.net/Development/HoverEffectIdeas/img/25.jpg');
+    background-size: cover;
+    position: relative;
+    padding: 40px;
+    overflow: hidden;
+}
+
+.card-text {
+    margin-top: 60px;
+    text-align: center;
+    color: white;
+    opacity: 0;
+    transition-duration: 0.2s;
+    transform: translateY(40px);
+}
+
+.card:hover .card-text {
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+.card-description {
+    height: 60px;
+    width: 100%;
+    padding: 20px;
+    background: white;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transition: 0.2s;
+    transform: translateY(60px);
+}
+
+.card:hover .card-description {
+    transform: translateY(0px);
+}
+
+.card-description p {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 20px;
+    color: #3c4a50;
+    transition: 0.2s;
+    transform: translateY(60px);
+}
+
+.card:hover .card-description p {
+    transform: translateY(0px);
+}
+
+.icon-container {
+    float: right;
+    color: #3c4a50;
+}
+
+.icon-container i {
+    margin-left: 10px;
+}
+
+.fa-paperclip {
+    transition: 0.3s;
+    transition-delay: 0.1s;
+    transform: translateY(60px);
+}
+
+.card:hover .fa-paperclip {
+    transform: translateY(0px);
+}
+
+.fa-eye {
+    transition: 0.3s;
+    transition-delay: 0.2s;
+    transform: translateY(60px);
+}
+
+.card:hover .fa-eye {
+    transform: translateY(0px);
+}
+
+.fa-heart-o {
+    transition: 0.3s;
+    transition-delay: 0.3s;
+    transform: translateY(60px);
+}
+
+.card:hover .fa-heart-o {
+    transform: translateY(0px);
+}
+
+
+
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Footer
+* * * * * * * * * * * * * * * * * * * * * * * * * * * */
+footer {
+    padding: 10px 0;
+    background: #222;
+    height: 300px;
+    width: 100%;
+    color: white;
+}
